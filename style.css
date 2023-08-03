@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,19 +11,22 @@
     height: 800px;
     align-content: center;
 }
-.right{
-height: 400px;
-width: 350px;
-background-color: white;
-border-radius: 30px;
-box-shadow: 5px 5px 10px rgba(52, 152, 219, 0.5); /* Add the blue shadow */
 
-text-align: center;
-position: relative;
-margin-left:250px ;
+.right {
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(52, 152, 219, 0.5);
+    /* Add the blue shadow */
+
+    text-align: center;
+    position: relative;
+    margin-left: 250px;
 }
-.left{
-  
+
+.left {
+
     position: absolute;
     margin-right: 300px;
     height: 400px;
@@ -32,46 +36,56 @@ margin-left:250px ;
     border-radius: 30px;
     text-align: center;
 }
-.score{
+
+.score {
     font-size: 50px;
     font-weight: bold;
 }
-.inner-left{
+
+.inner-left {
     padding: 30px;
 }
-.score-round{
+
+.score-round {
     width: 150px;
-    height:150px;
+    height: 150px;
     border-radius: 50%;
     background-color: rgb(42, 42, 141);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   box-shadow: 5px 5px 10px rgba(52, 152, 219, 0.5); /* Add the blue shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(52, 152, 219, 0.5);
+    /* Add the blue shadow */
 
 }
-.score-container{
+
+.score-container {
     display: flex;
     justify-content: center;
 }
-p{
+
+p {
     padding: 10px;
 }
-h2{
+
+h2 {
     padding: 20px;
 }
-.right{
+
+.right {
     padding: ;
 }
-.inner-right{
+
+.inner-right {
     /* display: flex;
     justify-content: center; */
     text-align: center;
     /* padding: 30px; */
 
 }
-.marks-container{
-   padding-left: 50px;
+
+.marks-container {
+    padding-left: 50px;
     /* width: 200px;
     height: 300px; */
     display: flex;
@@ -80,7 +94,8 @@ h2{
     height: 260px;
 
 }
-.mark-box{
+
+.mark-box {
     height: 38px;
     width: 250px;
     display: flex;
@@ -88,52 +103,66 @@ h2{
     align-items: center;
     border-radius: 10px;
 }
-.icon-container{
+
+.icon-container {
     display: flex;
     justify-content: space-between;
     /* padding:5px */
 
 }
-button{
-    margin-left:45px;
+
+button {
+    margin-left: 45px;
     width: 200px;
     height: 40px;
-    background-color:rgb(58, 62, 105);
+    background-color: rgb(58, 62, 105);
     border: none;
     border-radius: 50px;
     color: white;
 }
-.bold{
+
+.bold {
     font-weight: bolder;
 }
 
-.summary{
+.summary {
     padding: 20px;
-     padding-left: 78px;
-     font-size: 18px;
-      text-align: left;
-      color:rgb(58, 62, 105);
+    padding-left: 78px;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(58, 62, 105);
 }
 
 @media screen and (max-width: 640px) {
-    .left{
-        position: absolute;
-    margin-right: 0px;
-    height: 400px;
-    width: 250px;
-    background-color: rgb(68, 81, 219);
-    color: white;
-    border-radius: 30px;
-    text-align: center;
+    .container {
+        height: auto;
+        margin-top: -365px;
     }
-    .right{
-height: 400px;
-width: 250px;
-background-color: white;
-border-radius: 30px;
-box-shadow: 5px 5px 10px rgba(52, 152, 219, 0.5); /* Add the blue shadow */
-text-align: center;
-position: relative;
-margin-left:0px ;
+
+    .left {
+        margin-right: 0px;
+        height: 400px;
+        width: 320px;
+        }
+
+    .right {
+        margin-top: 750px;
+        height: 450px;
+        width: 320px;
+        margin-left: 0px;
     }
+    .inner-right {
+        padding-top: 50px;
+    }
+    .marks-container {
+        padding-left: 0px;
+    }
+    .summary {
+        
+        padding-left: 40px;
+    }    
+    button {
+        margin-left: 0px;
+    }
+
 }
